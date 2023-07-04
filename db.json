@@ -1,0 +1,8 @@
+{
+    "cursos": [
+        {"id": 1, "nome": "Empreendedorismo", "capa": "https://demo.discent.com.br/dirVirtualLMS/arquivos/arquivosPorRange/0000821622/imagem/382703579ee7de086ff8f8be63eea64c.jpg", "dataMatricula": "2021-07-29", "terminoContrato": "2023-06-18", "progresso":5,"statusAcademico": "Expirado", "statusFinanceiro": "Quitado"},
+        {"id": 2, "nome": "Inglês","capa": "https://demo.discent.com.br/dirVirtualLMS/arquivos/arquivosPorRange/0000821622/imagem/382703579ee7de086ff8f8be63eea64c.jpg", "dataMatricula": "2021-07-29", "terminoContrato": "2023-06-18", "progresso":5,"statusAcademico": "Expirado", "statusFinanceiro": "Quitado"},
+        {"id": 3, "nome": "Ética","capa": "https://demo.discent.com.br/dirVirtualLMS/arquivos/arquivosPorRange/0000821622/imagem/382703579ee7de086ff8f8be63eea64c.jpg", "dataMatricula": "2021-07-29", "terminoContrato": "2023-06-18", "progresso":5,"statusAcademico": "Cancelado", "statusFinanceiro": "Quitado"},
+        {"id": 4, "nome": "Português","capa": "https://demo.discent.com.br/dirVirtualLMS/arquivos/arquivosPorRange/0000821622/imagem/382703579ee7de086ff8f8be63eea64c.jpg", "dataMatricula": "2021-07-29", "terminoContrato": "2023-06-18", "progresso":5,"statusAcademico": "Cancelado", "statusFinanceiro": "Quitado"}
+    ]
+}
