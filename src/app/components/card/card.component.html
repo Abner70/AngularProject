@@ -1,0 +1,149 @@
+
+<div id="div-card">
+
+  <!-- Card -->
+<mat-card  *ngFor="let card of cursos" class="style-card">
+    <img id="img" class="hover-img" mat-card-image src= "{{card.capa}}" alt="Empreendedorismo">
+    <mat-card-content>
+      <p class="paragrafo-disciplina">
+        {{card.nome}}
+      </p>
+      <div class="paragrafo-matricula">
+        <div>Data De Matrícula</div>
+        <div> {{card.dataMatricula}} </div>
+      </div>
+      <div class="paragrafo-termino">
+        <div>Término Do Contrato</div>
+        <div> {{card.terminoContrato}} </div>
+      </div>
+
+      <!-- Divisão -->
+      <mat-divider class="divider"></mat-divider>
+
+      <!-- Status acadêmico e Status financeiro -->
+    <div>
+      <div  class="paragrafo-academico">
+        <div>Status Acadêmico</div>
+        <div> Status Financeiro </div>        
+    </div>
+      
+      <div class="paragrafo-financeiro">
+        <div id="status-academico"> {{card.statusAcademico}}</div>
+        <div id="status-financeiro" > {{card.statusFinanceiro}} </div>
+      </div>
+      <!-- Barra de Progresso bootstrap -->
+      <!-- <div class="progress" id="barra-progresso">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">{{card.progresso}}%</div>
+      </div>  -->
+
+      <!-- ////Barra angular-Material -->
+      <div id="barra-prog">           
+        <mat-progress-bar id="barra-progresso" mode="determinate" value="{{card.progresso}}"></mat-progress-bar>        
+      </div>
+
+    </div>  
+    </mat-card-content>
+</mat-card>
+</div>
+
+
+<button (click)="obterCursos()" >Obter</button>
+<button (click)="obterPorId()" >Obter ID</button>
+<!-- <button (click)="showLivro(livro)" >Livro</button> -->
+<!-- <h3> {{livroDetails}} </h3> -->
+
+<div>
+  <h2>Cursos: </h2>
+
+  <table>
+    <th>ID</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.id}} </li>
+    </tr>
+    <th>Nome</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.nome}} </li>
+    </tr>
+    <th>capa</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.capa}} </li>
+    </tr>
+    <th>dataMatricula</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.dataMatricula}} </li>
+    </tr>
+    <th>terminoContrato</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.terminoContrato}} </li>
+    </tr>
+    <th>progresso</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.progresso}} </li>
+    </tr>
+    <th>statusAcademico</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.statusAcademico}} </li>
+    </tr>
+    <th>statusFinanceiro</th>
+    <tr>
+      <li *ngFor="let curse of cursos"> {{curse.statusFinanceiro}} </li>
+    </tr>
+    
+  </table>  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- showAge(anima: Animal): void {
+  this.animalDetails = `O pet ${animal.name} tem ${animal.age} anos!` ////////função
+}
+
+<li *ngFor="let animal of animals" >  //////////////    *ngFor utilização
+  <button (click)="parametro função" ></button>     //////// Criação button 
+  -->  
+
+
+
+
+  <!-- <mat-card class="style-card">
+    <img id="img" mat-card-image src="https://demo.discent.com.br/dirVirtualLMS/arquivos/arquivosPorRange/0000821622/imagem/382703579ee7de086ff8f8be63eea64c.jpg" alt="Inglês">
+    <mat-card-content>
+      <p class="paragrafo-disciplina">
+        {{disciplina}}
+      </p>
+      <div class="paragrafo-matricula">
+        <div>Data De Matrícula</div>
+        <div> {{dt}} </div>
+      </div>
+      <div class="paragrafo-termino">
+        <div>Término Do Contrato</div>
+        <div> {{dt}} </div>
+      </div>
+      <mat-divider class="divider"></mat-divider>
+    </mat-card-content>
+</mat-card>
+    <mat-card class="style-card">
+        <img id="img" mat-card-image src="https://demo.discent.com.br/dirVirtualLMS/arquivos/arquivosPorRange/0000821613/imagem/e7fcd01880fda645ce3ced1329586104.png" alt="Ética">
+        <mat-card-content>
+          <p class="paragrafo-disciplina">
+            {{disciplina}}
+          </p>
+          <div class="paragrafo-matricula">
+            <div>Data De Matrícula</div>
+            <div>{{dt}}</div>
+          </div>
+          <div class="paragrafo-termino">
+            <div>Término Do Contrato</div>
+            <div>{{dt}}</div>
+          </div>
+          <mat-divider class="divider"></mat-divider>
+        </mat-card-content>
+    </mat-card> -->

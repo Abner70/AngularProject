@@ -1,0 +1,11 @@
+#head{
+    background-color: #211356;
+    color: white;
+    display: flex;
+}
+:host{
+    background: black;
+}
+#span-head{
+    margin-left: 30px;
+}
